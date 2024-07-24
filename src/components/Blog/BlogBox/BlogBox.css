@@ -1,0 +1,4 @@
+.blog-box:hover .blog-box-img-container img {
+  scale: 1.1;
+  transition: 0.8s;
+}
