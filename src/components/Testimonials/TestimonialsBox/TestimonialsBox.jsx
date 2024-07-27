@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialsBox = (props) => {
   return (
-    <div className="w-[100%] h-[100%] md:h-[250px] bg-black/50 text-white flex items-center justify-start py-7 px-7 m-4">
+    <div className="w-[90%] md:w-[99%] mx-auto h-[350px] m-2 text-white flex items-center justify-start py-7 px-7 bg-red-500">
       <div className="text-left">
         <h1 className="text-[20px] font-bold mb-5">{props.message}</h1>
 

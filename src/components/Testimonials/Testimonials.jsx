@@ -9,17 +9,40 @@ import { testimonialData } from "../../Data/TestimonialData";
 
 const Testimonials = () => {
   var settings = {
+    arrows: false,
     dots: false,
     infinite: true,
-    speed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="flex flex-col h-[100%] m-auto w-ful mb-20">
+    <div className="flex flex-col h-[100%] m-auto w-ful mb-20 pb-20">
       <Parallax
         className="relative w-full h-full flex flex-col "
         strength={750}
@@ -39,7 +62,7 @@ const Testimonials = () => {
           </h1>
         </div>
 
-        <div className="w-[90%] md:w-[50%] mx-auto p-9 ">
+        <div className="w-[90%] md:w-[90%] mx-auto mb-4 p-2">
           <Slider {...settings}>
             {testimonialData.map((data) => {
               return (
