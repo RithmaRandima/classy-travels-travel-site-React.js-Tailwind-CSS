@@ -1,28 +1,3 @@
-.hero-big-left-image,
-.hero-big-right-image {
-  background-size: cover;
-  background-position: center;
-  animation-name: backgroundChanger;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes backgroundChanger {
-  0% {
-    background-image: url("../../assets/Hero-Left-Big.jpg");
-  }
-  45% {
-    background-image: url("../../assets/News-Letter-Top.jpg");
-  }
-
-  80% {
-    background-image: url("../../assets/destination-box-1.jpg");
-  }
-  100% {
-    background-image: url("../../assets/destination-box-3.jpg");
-  }
-}
-
 .hero-big-right-image {
   animation-name: backgroundChanger2;
   animation-duration: 20s;
