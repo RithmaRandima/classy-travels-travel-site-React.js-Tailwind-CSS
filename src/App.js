@@ -7,7 +7,7 @@ import TopBar from "./components/TopBar/TopBar";
 import Footer from "./components/Footer/Footer";
 import Destination from "./components/Destination/Destination";
 import Offers from "./components/Offer/Offer";
-import AboutBottom from "./components/AboutBottom/AboutBottom";
+import NewsLetterTwo from "./components/NewsLetterTwo/NewsLetterTwo";
 import VideoSection from "./components/VideoSection/VideoSection";
 import Packages from "./components/Packages/Packages";
 import NewsLetter from "./components/NewsLetter/NewsLetter";
@@ -36,7 +36,7 @@ function App() {
         <DestinationPicker />
         <Offers />
         <Destination />
-        <AboutBottom />
+        <NewsLetterTwo />
         <Testimonials />
         <Blog />
         <Footer />
