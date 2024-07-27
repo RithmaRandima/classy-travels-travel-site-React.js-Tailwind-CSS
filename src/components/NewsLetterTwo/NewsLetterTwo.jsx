@@ -1,7 +1,15 @@
 import React from "react";
-import "./AboutBottom.css";
 import { TiTick } from "react-icons/ti";
 import BgImage from "../../assets/About-Bottom-Background.jpg";
+import image1 from "../../assets/Hero-Left-Top.jpg";
+import image2 from "../../assets/Hero-Right-Big.jpg";
+import image3 from "../../assets/Hero-Right-Top.jpg";
+import image4 from "../../assets/News-Letter-Top.jpg";
+import image5 from "../../assets/about-04.jpg";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const bgImage = {
   backgroundImage: `linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),url(${BgImage})`,
@@ -12,13 +20,37 @@ const bgImage = {
   width: "100%",
 };
 
-const AboutBottom = () => {
+const sideImages = [image1, image2, image3, image4, image5];
+
+const NewsLetterTwo = () => {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    cssEase: "linear",
+  };
   return (
     <div
       style={bgImage}
       className=" pt-3 h-[100%] md:h-[100vh] w-[100%] grid grid-cols-1 md:grid-cols-2 place-items-center mt-[40px]"
     >
-      <div className="about-bottom-left-box w-[430px] h-[480px] "></div>
+      <div className="about-bottom-left-box w-[430px] h-[480px] ">
+        <Slider {...settings}>
+          {sideImages.map((images) => {
+            return (
+              <img
+                src={images}
+                className="w-[100%] h-[480px] object-cover"
+                alt=""
+              />
+            );
+          })}
+        </Slider>
+      </div>
 
       <div className="p-6 hidden md:block">
         <div className="flex items-start flex-col text-left text-white">
@@ -56,4 +88,4 @@ const AboutBottom = () => {
   );
 };
 
-export default AboutBottom;
+export default NewsLetterTwo;
