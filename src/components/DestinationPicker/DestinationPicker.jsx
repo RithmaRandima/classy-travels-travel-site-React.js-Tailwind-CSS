@@ -2,10 +2,11 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { AiOutlineBars } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const DestinationPicker = () => {
   return (
-    <div className="h-[100%] md:h-[85vh] w-[100%] bg-gray-100 ">
+    <div className="h-[100%] md:h-[80vh] w-[100%] bg-gray-100 ">
       <div className="flex flex-col items-center text-center justify-center h-[40vh] px-7 w-[100%]">
         <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
           Choose your Trip
@@ -20,8 +21,18 @@ const DestinationPicker = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center  w-full h-[100%] md:h-[40vh] md:px-10 p-10">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-5 bg-white h-[100%] md:h-[130px] p-10 md:px-10 rounded-[20px]">
+      <div className="flex items-center justify-center  w-full h-[100%] md:h-[40vh] md:px-10">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.6,
+          }}
+          className="flex flex-col md:flex-row items-center justify-between w-full gap-5 bg-white h-[100%] md:h-[130px] p-10 md:px-10 rounded-[20px]"
+        >
           <div className="flex items-center w-full font-sans">
             <div>
               <FaSearch className="text-red-700 text-[35px]" />
@@ -69,7 +80,7 @@ const DestinationPicker = () => {
               Search
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

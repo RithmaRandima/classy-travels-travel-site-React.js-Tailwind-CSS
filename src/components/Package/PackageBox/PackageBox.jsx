@@ -1,9 +1,9 @@
 import React from "react";
-import "./DestinationBox.css";
+import "./PackageBox.css";
 
-const DestinationBox = (props) => {
+const PackageBox = (props) => {
   return (
-    <div className="destination-box relative w-full bg-red-400 h-[320px] md:h-[400px] rounded-[20px] overflow-hidden">
+    <div className="package-box w-[85%] md:w-[95%] h-[400px] shadow-2xl shadow-black/20  hover:scale-105 duration-300 m-2 mx-auto relative">
       <div className="absolute w-[100%] h-[100%] bg-purple-500">
         <img
           src={props.img}
@@ -21,4 +21,4 @@ const DestinationBox = (props) => {
   );
 };
 
-export default DestinationBox;
+export default PackageBox;

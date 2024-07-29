@@ -1,0 +1,17 @@
+.service-box-top {
+  transition: 0.5s;
+}
+
+.service-box-top:hover img {
+  filter: blur(1px) !important;
+}
+.service-box-top:hover .about-box-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.734));
+}
+
+.service-box-top:hover .about-box-description {
+  display: block;
+}
+.service-box-top:hover .about-box-btn {
+  display: flex;
+}

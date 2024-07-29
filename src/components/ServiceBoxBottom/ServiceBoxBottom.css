@@ -1,0 +1,11 @@
+.service-box-bottom {
+  transition: 0.5s;
+}
+
+.service-box-bottom:hover .popular-destination-box {
+  height: 100%;
+}
+
+.service-box-bottom:hover .popular-destination-box-bottom {
+  display: block;
+}

@@ -8,22 +8,25 @@ export const testimonialData = [
   {
     id: 1,
     img: user01,
-    message: `Laudantium dignissimos molestiae quibusdam, in magnam aliquid
-          consectetur! Rem voluptatum id quis eius repudiandae hic.`,
+    title: "Sri Lankan Tour",
+    message: `Laudantium  molestiae quibusdam, in magnam aliquid
+          consectetur! Rem  id quis eius repudiandae hic Rem  id quis eius repudiandae hic`,
     name: "Rithma Randima",
-    city: "Ahangama",
+    city: "Bali",
   },
   {
     id: 2,
     img: user02,
+    title: "Sri Lankan Tour",
     message: `Laudantium  molestiae quibusdam, in magnam aliquid
-          consectetur! Rem  id quis eius repudiandae hic.`,
+          consectetur! Rem  id quis eius repudiandae hic Rem  id quis eius repudiandae hic`,
     name: "Lahiru Chanchala",
     city: "Bali",
   },
   {
     id: 3,
     img: user03,
+    title: "Sri Lankan Tour",
     message: ` dignissimos molestiae quibusdam, in magnam aliquid
           consectetur! Rem voluptatum id quis eius repudiandae hic.`,
     name: "Angle Jons",
@@ -32,6 +35,7 @@ export const testimonialData = [
   {
     id: 4,
     img: user04,
+    title: "Sri Lankan Tour",
     message: ` dignissimos molestiae quibusdam, in magnam aliquid
           consectetur! Rem voluptatum id quis eius repudiandae hic. quis eius  hic.`,
     name: "John Snow",
@@ -40,6 +44,7 @@ export const testimonialData = [
   {
     id: 5,
     img: user05,
+    title: "Sri Lankan Tour",
     message: `Laudantium dignissimos molestiae quibusdam, in magnam aliquid
           consectetur! Rem voluptatum id quis eius repudiandae hic.`,
     name: "Phil Joker",

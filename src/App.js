@@ -1,18 +1,17 @@
 import "./App.css";
-import About from "./components/About/About";
+import Service from "./components/Service/Service";
 import DestinationPicker from "./components/DestinationPicker/DestinationPicker";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import TopBar from "./components/TopBar/TopBar";
 import Footer from "./components/Footer/Footer";
-import Destination from "./components/Destination/Destination";
-import Offers from "./components/Offer/Offer";
-import NewsLetterTwo from "./components/NewsLetterTwo/NewsLetterTwo";
-import VideoSection from "./components/VideoSection/VideoSection";
-import Packages from "./components/Packages/Packages";
+import Package from "./components/Package/Package";
 import NewsLetter from "./components/NewsLetter/NewsLetter";
+import VideoSection from "./components/VideoSection/VideoSection";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Destinations from "./components/Destinations/Destinations";
 import { createContext, useState } from "react";
 
 export const ShopContext = createContext(null);
@@ -29,16 +28,15 @@ function App() {
         <TopBar />
         <Navbar />
         <Hero />
-        <About />
-        <NewsLetter />
-        <Packages />
+        <Service />
+        <AboutUs />
         <VideoSection />
         <DestinationPicker />
-        <Offers />
-        <Destination />
-        <NewsLetterTwo />
-        <Testimonials />
+        <Package />
+        <Destinations />
+        <NewsLetter />
         <Blog />
+        <Testimonials />
         <Footer />
       </ShopContext.Provider>
     </div>

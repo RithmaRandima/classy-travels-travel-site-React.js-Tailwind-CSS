@@ -42,10 +42,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="flex flex-col h-[100%] m-auto w-ful mb-20 pb-20">
+    <div className="flex flex-col h-[100%] m-auto w-ful">
       <Parallax
         className="relative w-full h-full flex flex-col "
-        strength={750}
+        strength={250}
       >
         <Background className="custom-bg w-[100vw] h-[155vh] md:h-[150vh]  overflow-hidden">
           <img
@@ -68,7 +68,8 @@ const Testimonials = () => {
               return (
                 <TestimonialsBox
                   key={data.id}
-                  image={data.img}
+                  img={data.img}
+                  title={data.title}
                   name={data.name}
                   city={data.city}
                   message={data.message}

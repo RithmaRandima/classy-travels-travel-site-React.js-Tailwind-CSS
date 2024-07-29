@@ -8,6 +8,12 @@
   --primary-dark :#5651e5,
   --primary-light :#709dff
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
 
 @layer base {
   html {

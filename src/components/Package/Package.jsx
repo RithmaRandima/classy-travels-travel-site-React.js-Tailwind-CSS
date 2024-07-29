@@ -1,15 +1,52 @@
 import React from "react";
 import BackgroundImage from "../../assets/Destination-Background.jpg";
 import { Background, Parallax } from "react-parallax";
-import DestinationBox from "./DestinationBox/DestinationBox";
+import PackageBox from "./PackageBox/PackageBox";
 import { destinationsData } from "../../Data/DestinationData";
 
-const Destination = () => {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+const Package = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
+
   return (
     <div id="destination" className=" h-[300vh] md:h-[145vh]  w-[100%] ">
       <Parallax
         className="relative w-full h-[300vh] md:h-[145vh] flex flex-col "
-        strength={1000}
+        strength={300}
         blur={100}
       >
         <Background className="custom-bg w-[100vw] h-[300vh] md:h-[100vh] blur-[0px]">
@@ -32,17 +69,19 @@ const Destination = () => {
           </p>
         </div>
         <div className="flex-1 w-full h-[235vh] md:h-[80vh] pt-[20px]">
-          <div className="grid grid-cols-1 md:grid-cols-4 w-full px-5 md:place-items-center gap-5 md:gap-7  md:h-full ">
-            {destinationsData.map((data) => {
-              return (
-                <DestinationBox
-                  key={data.id}
-                  img={data.img}
-                  title={data.title}
-                  desc={data.desc}
-                />
-              );
-            })}
+          <div className="w-[98%] mx-auto mt-[10px] h-[100%]">
+            <Slider {...settings}>
+              {destinationsData.map((data) => {
+                return (
+                  <PackageBox
+                    key={data.id}
+                    img={data.img}
+                    title={data.title}
+                    desc={data.desc}
+                  />
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </Parallax>
@@ -50,4 +89,4 @@ const Destination = () => {
   );
 };
 
-export default Destination;
+export default Package;

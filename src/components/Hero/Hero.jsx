@@ -20,13 +20,35 @@ import "slick-carousel/slick/slick-theme.css";
 const sideImages = [image1, image2, image3, image4, image5];
 
 const Hero = () => {
-  var settings = {
+  var settingsLeftBox = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    cssEase: "linear",
+  };
+
+  var settingsRightBox = {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    arrows: false,
+    cssEase: "linear",
+  };
+
+  var settingsLeftBottom = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7000,
     arrows: false,
     cssEase: "linear",
   };
@@ -50,12 +72,12 @@ const Hero = () => {
 
       {/* big left img & big top */}
       <div className="absolute top-0 w-full h-[180px]  md:top-[50px] md:left-[20px] md:w-[300px] md:h-[500px]">
-        <Slider {...settings}>
+        <Slider {...settingsLeftBox}>
           {sideImages.map((images) => {
             return (
               <img
                 src={images}
-                className="w-[100%] h-[480px] object-cover"
+                className="w-[100%] h-[180px] md:h-[500px] object-cover"
                 alt=""
               />
             );
@@ -73,21 +95,27 @@ const Hero = () => {
       </div>
       {/* left img 2 & big top */}
       <div className="hidden md:block absolute top-[390px] left-[130px] h-[230px] w-[370px]">
-        <img
-          src={imgLeftBottom}
-          className="w-[100%] h-[100%] object-cover object-bottom"
-          alt=""
-        />
-      </div>
-
-      {/* big right img big bottom img */}
-      <div className="hero-big-right-image absolute block bottom-0 w-full h-[180px] md:top-[30px] md:right-[60px] md:w-[360px] md:h-[400px]">
-        <Slider {...settings}>
+        <Slider {...settingsLeftBottom}>
           {sideImages.map((images) => {
             return (
               <img
                 src={images}
-                className="w-[100%] h-[480px] object-cover"
+                className="w-[100%] h-[230px] object-cover"
+                alt=""
+              />
+            );
+          })}
+        </Slider>
+      </div>
+
+      {/* big right img big bottom img */}
+      <div className="hero-big-right-image absolute block bottom-0 w-full h-[180px] md:top-[30px] md:right-[60px] md:w-[360px] md:h-[400px]">
+        <Slider {...settingsRightBox}>
+          {sideImages.map((images) => {
+            return (
+              <img
+                src={images}
+                className="w-[100%] h-[180px] md:h-[480px] object-cover"
                 alt=""
               />
             );
@@ -96,7 +124,7 @@ const Hero = () => {
       </div>
 
       {/* right img 1 & big top */}
-      <div className="hidden md:block absolute  top-[190px] right-[20px] h-[350px] w-[230px]">
+      <div className="hidden md:block absolute  top-[320px] right-[10px] h-[300px] w-[230px]">
         <img
           src={imgRightBig}
           className="w-[100%] h-[100%] object-cover"

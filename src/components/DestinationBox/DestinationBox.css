@@ -1,0 +1,15 @@
+.popular-destination-box {
+  transition: 0.5s;
+}
+
+.popular-destination-box:hover .popular-destination-box {
+  height: 100%;
+}
+
+.popular-destination-box:hover .popular-destination-box-bottom {
+  display: block;
+}
+
+.popular-destination-box:hover img {
+  filter: blur(2px) !important;
+}
