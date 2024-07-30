@@ -52,18 +52,7 @@ const Hero = () => {
       </div>
 
       {/* big left img & big top */}
-      <motion.div
-        initial={{ x: -250 }}
-        whileInView={{ x: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.2,
-          duration: 400,
-        }}
-        className="absolute top-0 w-full h-[180px]  md:top-[50px] md:left-[20px] md:w-[300px] md:h-[500px]"
-      >
+      <div className="absolute top-0 w-full h-[180px]  md:top-[50px] md:left-[20px] md:w-[300px] md:h-[500px]">
         <Slider {...leftBig}>
           {heroLeftBig.map((images) => {
             return (
@@ -76,7 +65,7 @@ const Hero = () => {
             );
           })}
         </Slider>
-      </motion.div>
+      </div>
 
       {/* left small top */}
       <motion.div
@@ -127,8 +116,8 @@ const Hero = () => {
 
       {/* big right img big bottom img */}
       <motion.div
-        initial={{ x: 200 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{
           type: "spring",
           stiffness: 200,
@@ -138,18 +127,12 @@ const Hero = () => {
         }}
         className="absolute block bottom-0 w-full h-[180px] md:top-[30px] md:right-[60px] md:w-[360px] md:h-[400px]"
       >
-        <Slider {...rightBig}>
-          {heroRightBig.map((images) => {
-            return (
-              <img
-                src={images}
-                className="w-[100%] h-[180px] md:h-[480px] object-cover"
-                alt=""
-                loading="lazy"
-              />
-            );
-          })}
-        </Slider>
+        <img
+          src={heroRightBig[0]}
+          className="w-[100%] h-[180px] md:h-[480px] object-cover"
+          alt=""
+          loading="lazy"
+        />
       </motion.div>
 
       {/* right small Right */}
@@ -174,18 +157,7 @@ const Hero = () => {
       </motion.div>
 
       {/* right small Left */}
-      <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.6,
-          duration: 200,
-        }}
-        className="hidden md:block absolute  top-[390px] right-[310px] h-[190px] w-[190px]"
-      >
+      <div className="hidden md:block absolute  top-[390px] right-[310px] h-[190px] w-[190px]">
         <Slider {...rightSmallLeft}>
           {heroRightSmallLeft.map((images) => {
             return (
@@ -198,7 +170,7 @@ const Hero = () => {
             );
           })}
         </Slider>
-      </motion.div>
+      </div>
     </div>
   );
 };

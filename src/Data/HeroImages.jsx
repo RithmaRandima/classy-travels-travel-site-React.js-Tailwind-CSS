@@ -5,10 +5,8 @@ import leftBig03 from "../assets/big-left-3.jpg";
 import leftsmall01 from "../assets/small-left-1.jpg";
 import leftsmall02 from "../assets/small-left-2.jpg";
 
-import rightBig01 from "../assets/big-right-1.jpg";
 import rightBig02 from "../assets/big-right-2.jpg";
-import rightBig03 from "../assets/big-right-3.jpg";
-import rightBig04 from "../assets/big-right-4.jpg";
+import rightBig01 from "../assets/big-right-4.jpg";
 
 import rightSmallLeft01 from "../assets/right-small-left-1.jpg";
 import rightSmallLeft02 from "../assets/right-small-left-2.jpg";
@@ -21,7 +19,7 @@ export const heroLeftSmall = [leftsmall01, leftsmall02, rightBig01];
 
 export const heroLeftLeftSmallTop = [rightBig02];
 
-export const heroRightBig = [rightBig01, rightBig02, rightBig03, rightBig04];
+export const heroRightBig = [rightBig01];
 
 export const heroRightSmallLeft = [
   rightSmallLeft01,

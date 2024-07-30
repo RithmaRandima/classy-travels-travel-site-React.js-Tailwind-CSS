@@ -5,17 +5,7 @@ import { motion } from "framer-motion";
 
 const ServiceBoxTop = (props) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{
-        type: "just",
-        stiffness: 1000,
-        damping: 100,
-        delay: props.delay,
-      }}
-      className="service-box-top relative w-[100%] h-[130px] md:h-[130px]  hover:scale-110 "
-    >
+    <div className="service-box-top relative w-[100%] h-[130px] md:h-[130px]  hover:scale-110 ">
       <div className="absolute w-[100%] h-[100%]">
         <img
           src={props.img}
@@ -34,7 +24,7 @@ const ServiceBoxTop = (props) => {
           See More <FaArrowRight className="font-extrabold ml-1" />
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

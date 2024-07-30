@@ -63,67 +63,26 @@ const About = () => {
 
         <div className="hidden md:block flex-1 w-full h-[100vh] md:h-[35vh]  bg-black ">
           <div className="grid grid-cols-1 md:grid-cols-3 w-full px-5 md:place-items-center gap-5 md:gap-7  md:h-full">
-            <ServiceBoxTop img={img1} title="Parachuting" delay={0.0} />
-            <ServiceBoxTop img={img2} title="Surfing" delay={0.2} />
-            <ServiceBoxTop img={img3} title="Jet ski" delay={0.4} />
+            <ServiceBoxTop img={img1} title="Parachuting" />
+            <ServiceBoxTop img={img2} title="Surfing" />
+            <ServiceBoxTop img={img3} title="Jet ski" />
           </div>
         </div>
 
         <div className="flex flex-col items-center text-center md:items-start justify-center h-[55vh] md:text-left px-7 w-[100%] md:w-[700px] ">
-          <motion.p
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.2,
-            }}
-            className="sub-title text-[15px] md:text-[20px] mb-3"
-          >
+          <p className="sub-title text-[15px] md:text-[20px] mb-3">
             Dream Vacation Destination
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.4,
-            }}
-            className="font-bold text-[32px] md:text-[37px] mb-2"
-          >
+          </p>
+          <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
             Plan the Trip of <br /> a Lifetime with Ease
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.4,
-            }}
-            className="leading-7 text-[16px] md:text-[17px] mb-3"
-          >
+          </h1>
+          <p className="leading-7 text-[16px] md:text-[17px] mb-3">
             Whether you're looking for a romantic getaway, a family-friendly
             adventure, or a solo journey to explore the world, a travel agency
             can provide you with a custom-tailored itinerary that exceeds your
             expectations.
-          </motion.p>
-          <motion.button
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 0.4,
-            }}
-          >
-            More Info
-          </motion.button>
+          </p>
+          <button>More Info</button>
         </div>
 
         <div className="flex-1 w-full h-[100%] pt-[20px] pb-6">
