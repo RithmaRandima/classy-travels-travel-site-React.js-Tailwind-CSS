@@ -21,6 +21,7 @@ const ServiceBoxTop = (props) => {
           src={props.img}
           className="w-[100%] h-[100%] object-cover"
           alt=""
+          loading="lazy"
         />
       </div>
       <div className="about-box-overlay w-[100%] h-[100%] absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] flex flex-col justify-center">

@@ -11,6 +11,7 @@ function ServiceBoxBottom(props) {
         src={props.img}
         className="h-[270px]  w-[100%]  object-cover"
         alt={props.city}
+        loading="lazy"
       />
 
       {/* top button */}

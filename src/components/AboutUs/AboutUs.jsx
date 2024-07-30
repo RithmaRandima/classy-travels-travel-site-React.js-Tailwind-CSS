@@ -1,7 +1,7 @@
 import React from "react";
-import imgBig from "../../assets/News-Letter.jpg";
-import imgTop from "../../assets/News-Letter-Top.jpg";
-import imgBottom from "../../assets/News-Letter-Bottom.jpg";
+import imgBig from "../../assets/big-left-3.jpg";
+import imgTop from "../../assets/big-right-1.jpg";
+import imgBottom from "../../assets/big-left-1.jpg";
 import { motion } from "framer-motion";
 
 function AboutUs() {
@@ -20,7 +20,7 @@ function AboutUs() {
             damping: 10,
             delay: 0.2,
           }}
-          className="text-[#f00] text-[17px] md:text-[22px] mb-3"
+          className="text-[#f00] sub-title text-[17px] md:text-[22px] mb-3"
         >
           Dream Vacation Destination
         </motion.p>
@@ -96,8 +96,8 @@ function AboutUs() {
               src={imgTop}
               className="w-[100%] h-[100%] object-cover "
               alt=""
+              loading="lazy"
             />
-            <div className="absolute w-[100%] h-[100%] top-0 left-0 bg-gradient-to-b to-black/50 from-black/20 "></div>
           </motion.div>
 
           <motion.div
@@ -115,6 +115,7 @@ function AboutUs() {
               src={imgBottom}
               className="w-[100%] h-[100%] md:rounded-ee-full object-cover "
               alt=""
+              loading="lazy"
             />
           </motion.div>
         </div>
@@ -134,6 +135,7 @@ function AboutUs() {
               src={imgBig}
               className="w-[100%] h-[100%] object-cover"
               alt=""
+              loading="lazy"
             />
           </motion.div>
         </div>

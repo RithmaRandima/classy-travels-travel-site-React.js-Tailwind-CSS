@@ -1,17 +1,13 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-import BgImage from "../../assets/About-Bottom-Background.jpg";
-import image1 from "../../assets/Hero-Left-Top.jpg";
-import image2 from "../../assets/Hero-Right-Big.jpg";
-import image3 from "../../assets/Hero-Right-Top.jpg";
-import image4 from "../../assets/News-Letter-Top.jpg";
-import image5 from "../../assets/about-04.jpg";
+import BgImage from "../../assets/Newsletter.jpg";
 
 import { motion } from "framer-motion";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { heroLeftBig } from "../../Data/HeroImages";
 
 const bgImage = {
   backgroundImage: `linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.6)),url(${BgImage})`,
@@ -21,8 +17,6 @@ const bgImage = {
   height: "100vh",
   width: "100%",
 };
-
-const sideImages = [image1, image2, image3, image4, image5];
 
 const NewsLetter = () => {
   var settings = {
@@ -52,7 +46,7 @@ const NewsLetter = () => {
         className=" w-[430px] h-[480px] "
       >
         <Slider {...settings}>
-          {sideImages.map((images) => {
+          {heroLeftBig.map((images) => {
             return (
               <img
                 src={images}
@@ -66,7 +60,7 @@ const NewsLetter = () => {
 
       <div className="p-6 hidden md:block">
         <div className="flex items-start flex-col text-left text-white">
-          <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+          <p className="sub-title text-[#f00] text-[17px] md:text-[22px] mb-3">
             Adventure Travel
           </p>
           <h1 className="font-bold text-[32px] md:text-[37px] mb-2">

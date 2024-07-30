@@ -1,6 +1,6 @@
 import React from "react";
 
-import BackgroundImage from "../../assets/AboutBackground.png";
+import BackgroundImage from "../../assets/Service-Background.png";
 import ServiceBoxTop from "../ServiceBoxTop/ServiceBoxTop";
 import ServiceBoxBottom from "../ServiceBoxBottom/ServiceBoxBottom";
 
@@ -58,7 +58,7 @@ const About = () => {
         strength={300}
       >
         <Background className="custom-bg w-[100vw] h-[100%] opacity-80">
-          <img src={BackgroundImage} alt="fill murray" />
+          <img src={BackgroundImage} alt="fill murray" loading="lazy" />
         </Background>
 
         <div className="hidden md:block flex-1 w-full h-[100vh] md:h-[35vh]  bg-black ">
@@ -79,7 +79,7 @@ const About = () => {
               damping: 10,
               delay: 0.2,
             }}
-            className="text-[#f00] text-[17px] md:text-[22px] mb-3"
+            className="sub-title text-[15px] md:text-[20px] mb-3"
           >
             Dream Vacation Destination
           </motion.p>

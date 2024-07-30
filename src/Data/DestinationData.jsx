@@ -7,57 +7,6 @@ import img6 from "../assets/destination-package-6.jpg";
 import img7 from "../assets/destination-package-7.jpg";
 import img8 from "../assets/destination-package-8.jpg";
 
-export const destinationsData = [
-  {
-    id: 1,
-    img: img3,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img4,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img1,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img2,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img3,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img3,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img3,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-  {
-    id: 1,
-    img: img3,
-    title: "Greece",
-    desc: "Experience the ancient history & beaches",
-  },
-];
-
 export const popularDestinationsPackages = [
   {
     id: 1,

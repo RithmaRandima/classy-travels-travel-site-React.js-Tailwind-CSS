@@ -55,7 +55,7 @@ const Package = () => {
         </Background>
 
         <div className="flex flex-col items-center text-center md:items-start justify-center h-[55vh] md:text-left px-7 w-[100%] md:w-[700px] text-white z-10">
-          <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+          <p className="sub-title text-[#f00] text-[17px] md:text-[22px] mb-3">
             Next Adventure
           </p>
           <h1 className="font-bold text-[32px] md:text-[37px] mb-2">

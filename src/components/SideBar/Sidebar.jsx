@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import img1 from "../../assets/Hero-Right-Small.jpg.jpg";
-import img2 from "../../assets/about-01.jpg";
-import img3 from "../../assets/about-02.jpg";
-import img4 from "../../assets/News-Letter.jpg";
+import img1 from "../../assets/big-left-1.jpg";
+import img2 from "../../assets/big-left-2.jpg";
+import img3 from "../../assets/big-left-4.jpg";
+import img4 from "../../assets/Hero-Left-Top.jpg";
 import img5 from "../../assets/Hero-Left-bottom.jpg";
 import img6 from "../../assets/blog-02.jpg";
 import {
@@ -110,37 +110,37 @@ const Sidebar = () => {
         <div className="w-[70%] mx-auto h-[180px] my-4 grid grid-cols-3 gap-[15px]">
           <img
             src={img1}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
 
           <img
             src={img2}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
 
           <img
             src={img3}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
 
           <img
             src={img4}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
 
           <img
             src={img5}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
 
           <img
             src={img6}
-            className="w-[100%] h-[100%] object-cover rounded-[20px]"
+            className="w-[100%] h-[80px] object-cover rounded-[20px]"
             alt=""
           />
         </div>

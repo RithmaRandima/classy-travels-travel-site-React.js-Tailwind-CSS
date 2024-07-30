@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <div id="blog" className="h-[100%] w-[100%] py-3">
       <div className="flex flex-col items-center justify-center h-[50vh] px-7 w-[100%]">
-        <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+        <p className="sub-title text-[17px] md:text-[22px] mb-3">
           Roaming Tales
         </p>
         <h1 className="font-bold text-[32px] md:text-[37px] mb-2">

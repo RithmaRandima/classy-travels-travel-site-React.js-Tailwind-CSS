@@ -11,7 +11,7 @@ const Destinations = () => {
       className="flex flex-col w-[100%] h-[100%]  m-auto pb-20 "
     >
       <div className="py-10 px-2 pb-14 text-center">
-        <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+        <p className="sub-title text-[#f00] text-[17px] md:text-[22px] mb-3">
           Clear Price
         </p>
         <h1 className="font-bold text-[32px] md:text-[37px] mb-2">

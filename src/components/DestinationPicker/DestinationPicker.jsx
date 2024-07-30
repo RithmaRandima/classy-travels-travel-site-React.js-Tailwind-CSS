@@ -8,7 +8,7 @@ const DestinationPicker = () => {
   return (
     <div className="h-[100%] md:h-[80vh] w-[100%] bg-gray-100 ">
       <div className="flex flex-col items-center text-center justify-center h-[40vh] px-7 w-[100%]">
-        <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+        <p className="sub-title text-[#f00] text-[17px] md:text-[22px] mb-3">
           Choose your Trip
         </p>
         <h1 className="font-bold text-[32px] md:text-[37px] mb-2">

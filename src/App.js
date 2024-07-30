@@ -21,7 +21,7 @@ function App() {
   const [navStatus, setNavStatus] = useState("home");
 
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <ShopContext.Provider
         value={{ sideBar, setSideBar, navStatus, setNavStatus }}
       >
