@@ -1,7 +1,7 @@
 import React from "react";
-import DestinationBox from "../DestinationBox/DestinationBox";
+import DestinationBox from "./DestinationsBox/DestinationsBox";
 
-import { popularDestinationsData } from "../../Data/DestinationData";
+import { popularDestinationsPackages } from "../../Data/DestinationData";
 import { motion } from "framer-motion";
 
 const Destinations = () => {
@@ -11,15 +11,20 @@ const Destinations = () => {
       className="flex flex-col w-[100%] h-[100%]  m-auto pb-20 "
     >
       <div className="py-10 px-2 pb-14 text-center">
-        <h1 className="text-3xl md:text-5xl mb-6">Most Popular Tours</h1>
-        <p className="text-gray-700 text-[19px] my-1 md:w-[830px] mx-auto tracking-[2px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint
-          nam aliquam adipisci ipsum harum id maiores nostrum at architecto.
-          Lorem ipsum dolor sit amet.
+        <p className="text-[#f00] text-[17px] md:text-[22px] mb-3">
+          Clear Price
+        </p>
+        <h1 className="font-bold text-[32px] md:text-[37px] mb-2">
+          Affordable Travel Packages
+        </h1>
+        <p className="text-gray-700 text-[14px] my-1 md:w-[830px] mx-auto tracking-[2px]">
+          We believe that everyone deserves to experience their dream vacation
+          without breaking the bank. That's why we offer a price section on our
+          website that features a range of affordable travel
         </p>
       </div>
       <div className=" w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-        {popularDestinationsData.map((data) => {
+        {popularDestinationsPackages.map((data) => {
           return (
             <DestinationBox
               key={data.id}
@@ -45,7 +50,7 @@ const Destinations = () => {
         }}
         className="py-1 px-2 pt-14 text-center"
       >
-        <p className="text-gray-700 text-[19px] my-1 md:w-[830px] mx-auto tracking-[2px]">
+        <p className="text-gray-700 text-[14px] my-1 md:w-[830px] mx-auto tracking-[2px]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit animi
           iure officiis quibusdam excepturi repellendus aperiam. Atque eligendi
           eos nemo molestiae enim dignissimos expedita repudiandae dicta culpa

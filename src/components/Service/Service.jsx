@@ -6,17 +6,16 @@ import ServiceBoxBottom from "../ServiceBoxBottom/ServiceBoxBottom";
 
 import { Background, Parallax } from "react-parallax";
 
-import img1 from "../../assets/about-01.jpg";
-import img2 from "../../assets/about-02.jpg";
-import img3 from "../../assets/about-03.jpg";
-import img4 from "../../assets/about-04.jpg";
+import img1 from "../../assets/service-top-1.jpg";
+import img2 from "../../assets/service-top-2.jpg";
+import img3 from "../../assets/service-top-3.jpg";
 
 import { motion } from "framer-motion";
-import { destinationsData } from "../../Data/DestinationData";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { serviceBottomData } from "../../Data/serviceBottomData";
 
 const About = () => {
   var settings = {
@@ -62,11 +61,11 @@ const About = () => {
           <img src={BackgroundImage} alt="fill murray" />
         </Background>
 
-        <div className="hidden md:block flex-1 w-full h-[100vh] md:h-[35vh]  bg-black">
+        <div className="hidden md:block flex-1 w-full h-[100vh] md:h-[35vh]  bg-black ">
           <div className="grid grid-cols-1 md:grid-cols-3 w-full px-5 md:place-items-center gap-5 md:gap-7  md:h-full">
-            <ServiceBoxTop img={img1} title="Surfing" delay={0.0} />
+            <ServiceBoxTop img={img1} title="Parachuting" delay={0.0} />
             <ServiceBoxTop img={img2} title="Surfing" delay={0.2} />
-            <ServiceBoxTop img={img3} title="Surfing" delay={0.4} />
+            <ServiceBoxTop img={img3} title="Jet ski" delay={0.4} />
           </div>
         </div>
 
@@ -130,13 +129,18 @@ const About = () => {
         <div className="flex-1 w-full h-[100%] pt-[20px] pb-6">
           <div className="w-[98%] mx-auto mt-[10px] h-[100%]">
             <Slider {...settings}>
-              {destinationsData.map((data) => {
+              {serviceBottomData.map((data) => {
                 return (
                   <ServiceBoxBottom
                     key={data.id}
                     img={data.img}
-                    title={data.title}
-                    desc={data.desc}
+                    days={data.days}
+                    city={data.city}
+                    country={data.country}
+                    description={data.description}
+                    newPrice={data.newPrice}
+                    oldPrice={data.oldPrice}
+                    discount={data.discount}
                   />
                 );
               })}

@@ -29,7 +29,7 @@ const ServiceBoxTop = (props) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
           pariatur!
         </p>
-        <button className="about-box-btn hidden px-3 py-1 rounded-none  text-[9px] flex mx-auto items-center">
+        <button className="about-box-btn hidden px-3 py-1 rounded-none  text-[9px]  mx-auto items-center">
           See More <FaArrowRight className="font-extrabold ml-1" />
         </button>
       </div>

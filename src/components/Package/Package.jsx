@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../../assets/Destination-Background.jpg";
+import BackgroundImage from "../../assets/package-box-1.jpg";
 import { Background, Parallax } from "react-parallax";
 import PackageBox from "./PackageBox/PackageBox";
 import { destinationsData } from "../../Data/DestinationData";
@@ -7,6 +7,7 @@ import { destinationsData } from "../../Data/DestinationData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { packagesData } from "../../Data/PackageData";
 
 const Package = () => {
   var settings = {
@@ -71,12 +72,12 @@ const Package = () => {
         <div className="flex-1 w-full h-[235vh] md:h-[80vh] pt-[20px]">
           <div className="w-[98%] mx-auto mt-[10px] h-[100%]">
             <Slider {...settings}>
-              {destinationsData.map((data) => {
+              {packagesData.map((data) => {
                 return (
                   <PackageBox
                     key={data.id}
                     img={data.img}
-                    title={data.title}
+                    city={data.city}
                     desc={data.desc}
                   />
                 );
