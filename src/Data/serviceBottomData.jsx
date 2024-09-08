@@ -1,12 +1,12 @@
-import serviceBottom1 from "../assets/service-bottom-1.jpg";
-import serviceBottom2 from "../assets/service-bottom-2.jpg";
-import serviceBottom3 from "../assets/service-bottom-3.jpg";
-import serviceBottom4 from "../assets/service-bottom-4.jpg";
-import serviceBottom5 from "../assets/service-bottom-5.jpg";
-import serviceBottom6 from "../assets/service-bottom-6.jpg";
-import serviceBottom7 from "../assets/service-bottom-7.jpg";
-import serviceBottom8 from "../assets/service-bottom-8.jpg";
-import serviceBottom9 from "../assets/service-bottom-9.jpg";
+import serviceBottom1 from "../assets/service-bottom-1.jpeg";
+import serviceBottom2 from "../assets/service-bottom-2.jpeg";
+import serviceBottom3 from "../assets/service-bottom-3.jpeg";
+import serviceBottom4 from "../assets/service-bottom-4.jpeg";
+import serviceBottom5 from "../assets/service-bottom-5.jpeg";
+import serviceBottom6 from "../assets/service-bottom-6.jpeg";
+import serviceBottom7 from "../assets/service-bottom-7.jpeg";
+import serviceBottom8 from "../assets/service-bottom-8.jpeg";
+import serviceBottom9 from "../assets/service-bottom-9.jpeg";
 
 export const serviceBottomData = [
   {

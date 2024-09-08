@@ -1,7 +1,7 @@
 import React from "react";
-import imgBig from "../../assets/big-left-3.jpg";
-import imgTop from "../../assets/big-right-1.jpg";
-import imgBottom from "../../assets/big-left-1.jpg";
+import imgBig from "../../assets/big-left-3.jpeg";
+import imgTop from "../../assets/big-right-1.jpeg";
+import imgBottom from "../../assets/big-left-1.jpeg";
 import { motion } from "framer-motion";
 
 function AboutUs() {
@@ -31,7 +31,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.2,
+            delay: 0.5,
           }}
           className="font-bold text-[32px] md:text-[37px] mb-2"
         >
@@ -44,7 +44,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.3,
+            delay: 0.8,
           }}
           className="text-gray-700 text-[20px]"
         >
@@ -60,7 +60,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.3,
+            delay: 1,
           }}
           className="my-4 text-[17px] "
         >
@@ -73,13 +73,13 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.3,
+            delay: 1.2,
           }}
         >
           More Info
         </motion.button>
       </div>
-      <div className="flex flex-row gap-2 h-[500px]">
+      <div className="hidden md:flex flex-row gap-2 h-[500px]">
         <div className="hidden md:flex flex-col gap-4">
           <div className="w-[100%]  h-[100%] relative md:rounded-t-full overflow-hidden">
             <img

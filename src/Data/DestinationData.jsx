@@ -1,11 +1,11 @@
-import img1 from "../assets/destination-package-1.jpg";
-import img2 from "../assets/destination-package-2.jpg";
-import img3 from "../assets/destination-package-3.jpg";
-import img4 from "../assets/destination-package-4.jpg";
-import img5 from "../assets/destination-package-5.jpg";
-import img6 from "../assets/destination-package-6.jpg";
-import img7 from "../assets/destination-package-7.jpg";
-import img8 from "../assets/destination-package-8.jpg";
+import img1 from "../assets/destination-package-1.jpeg";
+import img2 from "../assets/destination-package-2.jpeg";
+import img3 from "../assets/destination-package-3.jpeg";
+import img4 from "../assets/destination-package-4.jpeg";
+import img5 from "../assets/destination-package-5.jpeg";
+import img6 from "../assets/Hero-Left-bottom.jpeg";
+import img7 from "../assets/package-box-2.jpeg";
+import img8 from "../assets/package-box-3.jpeg";
 
 export const popularDestinationsPackages = [
   {
@@ -161,42 +161,6 @@ export const serviceBottomBoxData = [
     price: "130",
     userCount: "12+",
     title: "Bali Honeymoon Tour",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
-            Lorem, ipsum. consectetur.`,
-  },
-
-  {
-    id: 6,
-    img: img6,
-    days: "12 days",
-    price: "1000",
-    userCount: "12+",
-    title: "Mountain Biking in Africa",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
-            Lorem, ipsum. consectetur.`,
-  },
-
-  {
-    id: 7,
-    img: img7,
-    days: "12 days",
-    price: "2000",
-    userCount: "12+",
-    title: "Bike Racing in Cambodia",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
-            Lorem, ipsum. consectetur.`,
-  },
-
-  {
-    id: 8,
-    img: img8,
-    days: "12 days",
-    price: "120",
-    userCount: "12+",
-    title: "The Spanish Parachuting",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
             natus adipisicing elit. Impedit natus. Lorem ipsum dolor sit amet
             Lorem, ipsum. consectetur.`,

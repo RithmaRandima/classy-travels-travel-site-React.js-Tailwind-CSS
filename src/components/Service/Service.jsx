@@ -6,9 +6,9 @@ import ServiceBoxBottom from "../ServiceBoxBottom/ServiceBoxBottom";
 
 import { Background, Parallax } from "react-parallax";
 
-import img1 from "../../assets/service-top-1.jpg";
-import img2 from "../../assets/service-top-2.jpg";
-import img3 from "../../assets/service-top-3.jpg";
+import img1 from "../../assets/service-top-1.jpeg";
+import img2 from "../../assets/service-top-2.jpeg";
+import img3 from "../../assets/service-top-3.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -52,7 +52,7 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="h-[100%] w-[100%] pt-10 ">
+    <div id="about" className="h-[100%] w-[100%] pt-5 md:pt-10 ">
       <Parallax
         className="relative w-full h-full flex flex-col "
         strength={300}
@@ -61,8 +61,8 @@ const About = () => {
           <img src={BackgroundImage} alt="fill murray" loading="lazy" />
         </Background>
 
-        <div className="hidden md:block flex-1 w-full h-[100vh] md:h-[35vh]  bg-black ">
-          <div className="grid grid-cols-1 md:grid-cols-3 w-full px-5 md:place-items-center gap-5 md:gap-7  md:h-full">
+        <div className="block flex-1 w-full h-[100%] py-[20px] md:py-0 md:h-[35vh]  md:bg-black ">
+          <div className="grid grid-cols-3 w-full md:px-5 md:place-items-center md:gap-7  md:h-full">
             <ServiceBoxTop img={img1} title="Parachuting" />
             <ServiceBoxTop img={img2} title="Surfing" />
             <ServiceBoxTop img={img3} title="Jet ski" />

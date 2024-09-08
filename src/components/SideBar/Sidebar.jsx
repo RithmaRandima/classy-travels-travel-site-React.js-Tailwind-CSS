@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import img1 from "../../assets/big-left-1.jpg";
-import img2 from "../../assets/big-left-2.jpg";
-import img3 from "../../assets/big-left-4.jpg";
-import img4 from "../../assets/Hero-Left-Top.jpg";
-import img5 from "../../assets/Hero-Left-bottom.jpg";
-import img6 from "../../assets/blog-02.jpg";
+import img1 from "../../assets/big-left-1.jpeg";
+import img2 from "../../assets/big-left-2.jpeg";
+import img3 from "../../assets/big-left-4.jpeg";
+import img4 from "../../assets/Hero-Left-Top.jpeg";
+import img5 from "../../assets/Hero-Left-bottom.jpeg";
+import img6 from "../../assets/blog-02.jpeg";
 import {
   FaFacebook,
   FaInstagram,
@@ -89,7 +89,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="absolute w-[100%] h-[100%] p-4">
+      <div className="hidden md:block absolute w-[100%] h-[100%] p-4">
         {/* logo Section */}
         <div className="relative  border-black w-fit mx-auto border-2 pb-1 pr-5 mb-3">
           <h1 className="text-[17px] font-bold">

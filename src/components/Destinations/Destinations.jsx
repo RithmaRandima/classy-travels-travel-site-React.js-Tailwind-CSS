@@ -23,7 +23,8 @@ const Destinations = () => {
           website that features a range of affordable travel
         </p>
       </div>
-      <div className=" w-[100%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      {/* big screen */}
+      <div className="hidden sm:grid w-[100%] mx-auto sm:grid-cols-2 md:grid-cols-4">
         {popularDestinationsPackages.map((data) => {
           return (
             <DestinationBox
@@ -36,6 +37,24 @@ const Destinations = () => {
               userCount={data.userCount}
             />
           );
+        })}
+      </div>
+
+      {/* small screen */}
+      <div className="md:hidden grid w-[100%] mx-auto grid-cols-1">
+        {popularDestinationsPackages.map((data, i) => {
+          if (i < 3)
+            return (
+              <DestinationBox
+                key={data.id}
+                img={data.img}
+                days={data.days}
+                title={data.title}
+                price={data.price}
+                description={data.description}
+                userCount={data.userCount}
+              />
+            );
         })}
       </div>
 
@@ -57,7 +76,7 @@ const Destinations = () => {
           vero numquam, asperiores ipsa optio minima molestias. Error quisquam
           tenetur unde dolores illum.
         </p>
-        <button className="bg-[#00ffee] p-2 px-5 mt-4 rounded-[50px] text-white text-[13px] uppercase">
+        <button className="bg-[#f00] p-2 px-5 mt-4 rounded-[50px] text-white text-[13px] uppercase">
           View All Tours
         </button>
       </motion.div>

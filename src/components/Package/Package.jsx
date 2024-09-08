@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../../assets/package-box-1.jpg";
+import BackgroundImage from "../../assets/package-box-1.jpeg";
 import { Background, Parallax } from "react-parallax";
 import PackageBox from "./PackageBox/PackageBox";
 import { destinationsData } from "../../Data/DestinationData";
@@ -44,14 +44,18 @@ const Package = () => {
   };
 
   return (
-    <div id="destination" className=" h-[300vh] md:h-[145vh]  w-[100%] ">
+    <div id="destination" className=" h-[110vh] md:h-[145vh]  w-[100%] ">
       <Parallax
-        className="relative w-full h-[300vh] md:h-[145vh] flex flex-col "
+        className="relative w-full h-[110vh] md:h-[145vh] flex flex-col "
         strength={300}
         blur={100}
       >
-        <Background className="custom-bg w-[100vw] h-[300vh] md:h-[100vh] blur-[0px]">
-          <img src={BackgroundImage} alt="fill murray h-[100%]" />
+        <Background className="custom-bg w-[100vw] h-[200vh] bg-black md:h-[100vh] blur-[0px]">
+          <img
+            src={BackgroundImage}
+            className="h-[110vh] object-cover"
+            alt="fill murray h-[300vh]"
+          />
         </Background>
 
         <div className="flex flex-col items-center text-center md:items-start justify-center h-[55vh] md:text-left px-7 w-[100%] md:w-[700px] text-white z-10">

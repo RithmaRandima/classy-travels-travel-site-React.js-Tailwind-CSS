@@ -1,7 +1,7 @@
-import img2 from "../assets/blog-02.jpg";
-import img3 from "../assets/blog-03.jpg";
-import img4 from "../assets/blog-04.jpg";
-import img5 from "../assets/blog-05.jpg";
+import img2 from "../assets/blog-02.jpeg";
+import img3 from "../assets/blog-03.jpeg";
+import img4 from "../assets/blog-04.jpeg";
+import img5 from "../assets/blog-05.jpeg";
 
 export const blogData = [
   {

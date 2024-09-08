@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGooglePlusG,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -28,7 +33,7 @@ const Footer = () => {
           </p>
         </div>
         {/*col-2  */}
-        <div className=" w[100%] h-[100%] text-center p-6">
+        <div className="hidden md:block w[100%] h-[100%] text-center p-6">
           <h1 className="font-bold mb-5 text-[18px]">VISIT</h1>
           <p className="w-[180px] mx-auto text-[14px] text-gray-400">
             317 Pacific C Hwy Huntington, CA 92648
@@ -48,10 +53,10 @@ const Footer = () => {
         {/* col-3 */}
         <div className="text-center">
           <h1 className="font-bold my-5 text-[18px]">RESERVATIONS</h1>
-          <button className="border border-white bg-transparent text-white py-2 px-6 mb-5">
+          <button className="border border-white bg-transparent text-white py-2 px-6 mb-5 uppercase">
             BOOK YOUR Ticket
           </button>
-          <h1 className="font-bold my-5 text-[18px]">Hours</h1>
+          <h1 className="font-bold my-5 text-[18px] uppercase">Hours</h1>
           <p className="mx-auto text-[14px] text-gray-400">
             MONDAY thru FRIDAY
           </p>
@@ -69,13 +74,16 @@ const Footer = () => {
           <h1 className="font-bold my-5 text-[18px]">FOLLOW ALONG</h1>
           <div className="flex gap-6 items-center justify-center">
             <p>
-              <FaInstagram size={24} />
-            </p>
-            <p>
               <FaFacebook size={24} />
             </p>
             <p>
               <FaTwitter size={24} />
+            </p>
+            <p>
+              <FaGooglePlusG size={24} />
+            </p>
+            <p>
+              <FaInstagram size={24} />
             </p>
           </div>
         </div>

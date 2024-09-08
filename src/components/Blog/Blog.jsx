@@ -1,7 +1,7 @@
 import React from "react";
 import BlogBox from "./BlogBox/BlogBox";
 import "./BlogBox/BlogBox.css";
-import img1 from "../../assets/blog-01.jpg";
+import img1 from "../../assets/blog-01.jpeg";
 import { blogData } from "../../Data/BlogData";
 
 const Blog = () => {

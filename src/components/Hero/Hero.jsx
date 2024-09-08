@@ -35,16 +35,16 @@ const Hero = () => {
   var rightSmallLeft = changeAutoPlaySpeed(10000);
   var rightSmallRight = changeAutoPlaySpeed(5000);
   return (
-    <div className="relative w-[100%] h-[120vh] md:h-[100vh] bg-white">
+    <div className="relative w-[100%] h-[100vh] md:h-[100vh] bg-white">
       {/* center text */}
-      <div className="absolute w-[100%] md:max-w-[500px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+      <div className="absolute w-[100%] md:max-w-[500px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
         <p className=" heading-name text-[#f00] text-[17px] md:text-[25px] tracking-[2px]">
           Travel Experiences!
         </p>
         <h1 className=" heading-name  mx-auto  text-black rotate-[-10deg] text-[100px] md:text-[150px] tracking-[10px] mt-[-30px] md:mt-[-50px]  mb-6 font-extrabold">
-          Sport
+          Classy
         </h1>
-        <p className="mb-5 text-[15px] md:text-[17px] w-[80%] md:w-[70%] md:mt-[-20px] mx-auto text-gray-500">
+        <p className=" heading-sub-name mb-5 text-[16px] md:text-[17px] w-[80%]  tracking-[2px] md:w-[75%] md:mt-[-20px] mx-auto text-gray-500">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
           placeat <br /> ipsa sint explicabo sequi id.
         </p>
@@ -69,14 +69,13 @@ const Hero = () => {
 
       {/* left small top */}
       <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
           type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.2,
-          duration: 200,
+          stiffness: 100,
+          damping: 10,
+          delay: 1.2,
         }}
         className="hidden md:block absolute top-[80px] left-[250px] h-[250px] w-[200px]"
       >
@@ -89,14 +88,13 @@ const Hero = () => {
       </motion.div>
       {/* left img 2 & small bottom */}
       <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
           type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.5,
-          duration: 500,
+          stiffness: 100,
+          damping: 10,
+          delay: 1.2,
         }}
         className="hidden md:block absolute top-[390px] left-[130px] h-[230px] w-[370px]"
       >
@@ -116,14 +114,13 @@ const Hero = () => {
 
       {/* big right img big bottom img */}
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.7,
-          duration: 500,
+          stiffness: 100,
+          damping: 10,
+          delay: 1.2,
         }}
         className="absolute block bottom-0 w-full h-[180px] md:top-[30px] md:right-[60px] md:w-[360px] md:h-[400px]"
       >
@@ -137,14 +134,13 @@ const Hero = () => {
 
       {/* right small Right */}
       <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           type: "spring",
-          stiffness: 200,
-          damping: 100,
-          delay: 0.4,
-          duration: 300,
+          stiffness: 100,
+          damping: 10,
+          delay: 1.2,
         }}
         className="hidden md:block absolute  top-[330px] right-[30px] h-[300px] w-[230px]"
       >

@@ -1,6 +1,6 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
-import BgImage from "../../assets/Newsletter.jpg";
+import BgImage from "../../assets/Newsletter.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -14,7 +14,6 @@ const bgImage = {
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  height: "100vh",
   width: "100%",
 };
 
@@ -32,7 +31,7 @@ const NewsLetter = () => {
   return (
     <div
       style={bgImage}
-      className=" pt-3 h-[100%] md:h-[100vh] w-[100%] grid grid-cols-1 md:grid-cols-2 place-items-center"
+      className=" pt-3 h-[70vh] md:h-[100vh] w-[100%] grid grid-cols-1 md:grid-cols-2 place-items-center"
     >
       <motion.div
         initial={{ x: -500 }}
@@ -43,7 +42,7 @@ const NewsLetter = () => {
           damping: 100,
           delay: 0.1,
         }}
-        className=" w-[430px] h-[480px] "
+        className="hidden md:block w-[430px] h-[480px] "
       >
         <Slider {...settings}>
           {heroLeftBig.map((images) => {
@@ -58,7 +57,7 @@ const NewsLetter = () => {
         </Slider>
       </motion.div>
 
-      <div className="p-6 hidden md:block">
+      <div className="p-6 block">
         <div className="flex items-start flex-col text-left text-white">
           <p className="sub-title text-[#f00] text-[17px] md:text-[22px] mb-3">
             Adventure Travel
