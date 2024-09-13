@@ -10,7 +10,7 @@ function AboutUs() {
       id="about"
       className="overflow-hidden max-w-[1140px] m-auto w-full  grid grid-cols-1 md:grid-cols-2 mb-[50px] text-center md:text-left mt-10"
     >
-      <div className="p-4 py-10">
+      <div className="p-4  md:py-10">
         <motion.p
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}

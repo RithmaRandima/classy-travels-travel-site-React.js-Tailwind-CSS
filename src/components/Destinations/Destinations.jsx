@@ -4,7 +4,23 @@ import DestinationBox from "./DestinationsBox/DestinationsBox";
 import { popularDestinationsPackages } from "../../Data/DestinationData";
 import { motion } from "framer-motion";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const Destinations = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+  };
+
   return (
     <div
       id="popular"
@@ -40,10 +56,10 @@ const Destinations = () => {
         })}
       </div>
 
-      {/* small screen */}
-      <div className="md:hidden grid w-[100%] mx-auto grid-cols-1">
-        {popularDestinationsPackages.map((data, i) => {
-          if (i < 3)
+      {/* mobile */}
+      <div className="block md:hidden w-[100%] mx-auto h-[100%]">
+        <Slider {...settings}>
+          {popularDestinationsPackages.map((data, i) => {
             return (
               <DestinationBox
                 key={data.id}
@@ -55,7 +71,8 @@ const Destinations = () => {
                 userCount={data.userCount}
               />
             );
-        })}
+          })}
+        </Slider>
       </div>
 
       <motion.div

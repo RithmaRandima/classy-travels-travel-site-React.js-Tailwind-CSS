@@ -10,7 +10,8 @@ const Footer = () => {
   return (
     <div className="w-[100%] text-white  bg-[#050505]">
       <div className="grid grid-cols-1 md:grid-cols-4 pb-9 pt-3">
-        <div className=" w[100%] h-[100%] text-center p-6">
+        {/* col-1 */}
+        <div className="hidden md:block w[100%] h-[100%] text-center p-6">
           {/* logo Section */}
           <div className="relative w-fit mx-auto border-white border-2 pb-1 pl-1 pr-5 mb-10">
             <h1 className="text-[15px] font-bold">
@@ -27,11 +28,12 @@ const Footer = () => {
             classy<span className="text-[#f00] font-bold">Fit</span>, founded in
             2022, is dedicated to all those who love to wander far and wide.
           </p>
-          <p className="w-[200px] mx-auto text-[15px] text-gray-400">
+          <p className="hidden md:block w-[200px] mx-auto text-[15px] text-gray-400">
             We'd like to invite you on a culinary adventure, where you’ll
             explore undiscovered gourmet experiences.
           </p>
         </div>
+
         {/*col-2  */}
         <div className="hidden md:block w[100%] h-[100%] text-center p-6">
           <h1 className="font-bold mb-5 text-[18px]">VISIT</h1>
@@ -64,11 +66,14 @@ const Footer = () => {
           <p className="mx-auto text-[14px] text-gray-400">SATURDAY/SUNDAY</p>
           <p className="mx-auto text-[14px] text-gray-400"> 10am - 11pm</p>
         </div>
+
         {/* col-4 */}
         <div className="text-center">
-          <h1 className="font-bold my-5 text-[18px]">ABOUT</h1>
-          <p className="mx-auto text-[14px] text-gray-400">FAQ</p>
-          <p className="w-[50%] mx-auto text-[14px] text-gray-400 mb-7">
+          <h1 className="hidden md:block font-bold my-5 text-[18px]">ABOUT</h1>
+          <p className="hidden md:block mx-auto text-[14px] text-gray-400">
+            FAQ
+          </p>
+          <p className="hidden md:block w-[50%] mx-auto text-[14px] text-gray-400 mb-7">
             Reservation Policy Privacy Policy Health & Safety
           </p>
           <h1 className="font-bold my-5 text-[18px]">FOLLOW ALONG</h1>
@@ -107,7 +112,7 @@ const Footer = () => {
             sport Experience
           </p>
         </div>
-        <p className="text-[10px] font-bold tracking-[4px]">
+        <p className="hidden md:block text-[10px] font-bold tracking-[4px]">
           FLY ABOVE THE WORLD
         </p>
       </div>

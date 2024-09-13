@@ -35,7 +35,7 @@ const Hero = () => {
   var rightSmallLeft = changeAutoPlaySpeed(10000);
   var rightSmallRight = changeAutoPlaySpeed(5000);
   return (
-    <div className="relative w-[100%] h-[100vh] md:h-[100vh] bg-white">
+    <div className="relative w-[100%] h-[80vh] md:h-[100vh] bg-white">
       {/* center text */}
       <div className="absolute w-[100%] md:max-w-[500px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
         <p className=" heading-name text-[#f00] text-[17px] md:text-[25px] tracking-[2px]">

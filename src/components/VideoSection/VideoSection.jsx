@@ -5,18 +5,18 @@ import { ReactTyped } from "react-typed";
 
 const VideoSection = () => {
   return (
-    <div className="h-[80vh] w-[100%] mx-auto bg-black my-6 relative">
+    <div className="h-[60vh] md:h-[80vh] w-[100%] mx-auto bg-black my-6 relative">
       <video
         autoPlay
         loop
         muted
         id="video"
-        className="w-[100%] h-[80vh] object-cover"
+        className="w-[100%] h-[60vh] md:h-[80vh] object-cover"
       >
         <source src={home_video} type="video/mp4" />
       </video>
       <div className="absolute w-[100%] h-[100%] bg-black/50 top-0 left-0 flex flex-col justify-center items-center text-white">
-        <h1 className=" text-[50px] md:text-[80px]">
+        <h1 className=" text-[40px] md:text-[80px] mb-3">
           Travel
           <span className="text-[#f00] ml-4 font-bold">
             <ReactTyped strings={["Itineraries"]} typeSpeed={490} loop />

@@ -4,10 +4,26 @@ import "./BlogBox/BlogBox.css";
 import img1 from "../../assets/blog-01.jpeg";
 import { blogData } from "../../Data/BlogData";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const Blog = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+  };
+
   return (
     <div id="blog" className="h-[100%] w-[100%] py-3">
-      <div className="flex flex-col items-center justify-center h-[50vh] px-7 w-[100%]">
+      <div className="flex flex-col items-center justify-center h-[35vh] md:h-[50vh] px-7 w-[100%]">
         <p className="sub-title text-[17px] md:text-[22px] mb-3">
           Roaming Tales
         </p>
@@ -23,7 +39,7 @@ const Blog = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2  w-full h-[100%]">
-        <div className="blog-box w-full h-[100%] p-2 py-6 font-sans">
+        <div className="hidden md:block blog-box w-full h-[100%] p-2 py-6 font-sans">
           <div className="blog-box-img-container w-[90%] mx-auto text-left">
             <div className="w-[100%]  overflow-hidden  h-[300px]">
               <img
@@ -51,8 +67,9 @@ const Blog = () => {
 
         {/* blog box Section*/}
         <div className="w-full h-[100%] p-2 py-6 ">
+          {/* desktop */}
           {/* BlogBox Container */}
-          <div className="flex flex-col justify-between gap-2 md:gap-5">
+          <div className="hidden md:flex flex-col justify-between gap-2 md:gap-5">
             {blogData.map((data) => {
               return (
                 <BlogBox
@@ -63,6 +80,22 @@ const Blog = () => {
                 />
               );
             })}
+          </div>
+
+          {/* mobile */}
+          <div className="block md:hidden w-[100%] mx-auto h-[100%]">
+            <Slider {...settings}>
+              {blogData.map((data) => {
+                return (
+                  <BlogBox
+                    img={data.img}
+                    date={data.date}
+                    title={data.title}
+                    description={data.description}
+                  />
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>
