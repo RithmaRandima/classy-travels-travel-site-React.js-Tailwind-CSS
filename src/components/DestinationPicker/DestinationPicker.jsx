@@ -29,7 +29,7 @@ const DestinationPicker = () => {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 1.2,
+            delay: 0.2,
           }}
           className="flex flex-col md:flex-row items-center justify-between w-[90%] md:w-full gap-5 bg-white h-[100%] md:h-[130px] p-10 md:px-10 rounded-[20px]"
         >

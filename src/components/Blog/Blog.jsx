@@ -70,9 +70,10 @@ const Blog = () => {
           {/* desktop */}
           {/* BlogBox Container */}
           <div className="hidden md:flex flex-col justify-between gap-2 md:gap-5">
-            {blogData.map((data) => {
+            {blogData.map((data, index) => {
               return (
                 <BlogBox
+                  key={index}
                   img={data.img}
                   date={data.date}
                   title={data.title}
@@ -85,9 +86,10 @@ const Blog = () => {
           {/* mobile */}
           <div className="block md:hidden w-[100%] mx-auto h-[100%]">
             <Slider {...settings}>
-              {blogData.map((data) => {
+              {blogData.map((data, index) => {
                 return (
                   <BlogBox
+                    key={index}
                     img={data.img}
                     date={data.date}
                     title={data.title}

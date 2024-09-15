@@ -54,9 +54,10 @@ const Hero = () => {
       {/* big left img & big top */}
       <div className="absolute top-0 w-full h-[180px]  md:top-[50px] md:left-[20px] md:w-[300px] md:h-[500px]">
         <Slider {...leftBig}>
-          {heroLeftBig.map((images) => {
+          {heroLeftBig.map((images, index) => {
             return (
               <img
+                key={index}
                 src={images}
                 className="w-[100%] h-[180px] md:h-[500px] object-cover"
                 alt=""
@@ -75,7 +76,7 @@ const Hero = () => {
           type: "spring",
           stiffness: 100,
           damping: 10,
-          delay: 1.2,
+          delay: 0.2,
         }}
         className="hidden md:block absolute top-[80px] left-[250px] h-[250px] w-[200px]"
       >
@@ -86,6 +87,7 @@ const Hero = () => {
           loading="lazy"
         />
       </motion.div>
+
       {/* left img 2 & small bottom */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -94,14 +96,15 @@ const Hero = () => {
           type: "spring",
           stiffness: 100,
           damping: 10,
-          delay: 1.2,
+          delay: 0.6,
         }}
         className="hidden md:block absolute top-[390px] left-[130px] h-[230px] w-[370px]"
       >
         <Slider {...leftSmallBottom}>
-          {heroLeftSmall.map((images) => {
+          {heroLeftSmall.map((images, index) => {
             return (
               <img
+                key={index}
                 src={images}
                 className="w-[100%] h-[230px] object-cover"
                 alt=""
@@ -120,7 +123,7 @@ const Hero = () => {
           type: "spring",
           stiffness: 100,
           damping: 10,
-          delay: 1.2,
+          delay: 0.3,
         }}
         className="absolute block bottom-0 w-full h-[180px] md:top-[30px] md:right-[60px] md:w-[360px] md:h-[400px]"
       >
@@ -140,7 +143,7 @@ const Hero = () => {
           type: "spring",
           stiffness: 100,
           damping: 10,
-          delay: 1.2,
+          delay: 0.4,
         }}
         className="hidden md:block absolute  top-[330px] right-[30px] h-[300px] w-[230px]"
       >
@@ -155,9 +158,10 @@ const Hero = () => {
       {/* right small Left */}
       <div className="hidden md:block absolute  top-[390px] right-[310px] h-[190px] w-[190px]">
         <Slider {...rightSmallLeft}>
-          {heroRightSmallLeft.map((images) => {
+          {heroRightSmallLeft.map((images, index) => {
             return (
               <img
+                key={index}
                 src={images}
                 className="w-[100%] h-[190px] object-cover"
                 alt=""

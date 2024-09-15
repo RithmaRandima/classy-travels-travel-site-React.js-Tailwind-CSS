@@ -21,7 +21,7 @@ const Sidebar = () => {
     <div
       className={
         sideBar === true
-          ? "absolute bg-black md:bg-white h-[100vh] w-[50%] md:w-[35%] top-0 left-0 duration-700"
+          ? "absolute bg-black md:bg-whit  h-[100vh] w-[50%] md:w-[35%] top-0 left-0 duration-700"
           : "absolute bg-black md:bg-white h-[100vh] w-[50%] md:w-[35%] top-0 left-[-100%] duration-1000"
       }
     >

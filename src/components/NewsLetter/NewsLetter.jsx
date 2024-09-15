@@ -45,9 +45,10 @@ const NewsLetter = () => {
         className="hidden md:block w-[430px] h-[480px] "
       >
         <Slider {...settings}>
-          {heroLeftBig.map((images) => {
+          {heroLeftBig.map((images, index) => {
             return (
               <img
+                key={index}
                 src={images}
                 className="w-[100%] h-[480px] object-cover"
                 alt=""

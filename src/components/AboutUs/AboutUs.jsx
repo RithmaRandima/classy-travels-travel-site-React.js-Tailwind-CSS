@@ -31,7 +31,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.5,
+            delay: 0.4,
           }}
           className="font-bold text-[32px] md:text-[37px] mb-2"
         >
@@ -44,7 +44,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 0.8,
+            delay: 0.6,
           }}
           className="text-gray-700 text-[20px]"
         >
@@ -60,7 +60,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 1,
+            delay: 0.7,
           }}
           className="my-4 text-[17px] "
         >
@@ -73,7 +73,7 @@ function AboutUs() {
             type: "spring",
             stiffness: 100,
             damping: 10,
-            delay: 1.2,
+            delay: 0.8,
           }}
         >
           More Info
@@ -81,33 +81,64 @@ function AboutUs() {
       </div>
       <div className="hidden md:flex flex-row gap-2 h-[500px]">
         <div className="hidden md:flex flex-col gap-4">
-          <div className="w-[100%]  h-[100%] relative md:rounded-t-full overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.2,
+            }}
+            className="w-[100%]  h-[100%] relative md:rounded-t-full overflow-hidden"
+          >
             <img
               src={imgTop}
               className="w-[100%] h-[100%] object-cover "
               alt=""
               loading="lazy"
             />
-          </div>
+          </motion.div>
 
-          <div className="w-full h-[100%]">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.6,
+            }}
+            className="w-full h-[100%]"
+          >
             <img
               src={imgBottom}
               className="w-[100%] h-[100%] md:rounded-ee-full object-cover "
               alt=""
               loading="lazy"
             />
-          </div>
+          </motion.div>
         </div>
         <div>
-          <div className="md:flex md:w-[330px] md:h-[100%] overflow-hidden md:rounded-b-full ">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.2 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 14,
+              delay: 0.5,
+              duration: 0.6,
+            }}
+            className="md:flex md:w-[330px] md:h-[100%] overflow-hidden md:rounded-b-full "
+          >
             <img
               src={imgBig}
               className="w-[100%] h-[100%] object-cover"
               alt=""
               loading="lazy"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -82,7 +82,7 @@ const Destinations = () => {
           type: "spring",
           stiffness: 100,
           damping: 10,
-          delay: 0.6,
+          delay: 0.2,
         }}
         className="py-1 px-2 pt-14 text-center"
       >
